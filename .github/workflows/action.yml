@@ -16,3 +16,4 @@ jobs:
           token: ${{ secrets.PAT }}
           repository: y2k/test-repo-1
           event-type: image_updated
+          client-payload: '{"tag": "latest"}'
