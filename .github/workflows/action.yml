@@ -1,4 +1,4 @@
-name: Docker Image CI
+# name: Docker Image CI
 
 on:
   push:
@@ -14,6 +14,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.PAT }}
-          repository: y2k/test-repo-1
+          repository: y2k/y2k.github.io
           event-type: image_updated
           client-payload: '{"image": "y2khub/mineswipper"}'
