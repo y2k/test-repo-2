@@ -1,0 +1,7 @@
+- name: Repository Dispatch
+  uses: peter-evans/repository-dispatch@v2
+  with:
+    token: ${{ secrets.PAT_TOKEN }}
+    repository: y2k/test-repo-1
+    event-type: image_updated
+    client-payload: '{"tag": "latest"}'
