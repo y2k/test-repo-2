@@ -15,4 +15,4 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           repository: y2k/test-repo-1
-          event-type: my-event
+          event-type: image_updated
